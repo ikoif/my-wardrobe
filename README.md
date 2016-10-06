@@ -1,6 +1,6 @@
 # My-wardrobe
 
-A simple web based app for storing you clothes library!
+A simple web based app for storing your clothes library!
 
 1. Register with Facebook (one click)
 1. Take a photo of your wearable
