@@ -6,7 +6,7 @@ let registerConfig = require("spur-common/registerConfig")
 
 module.exports = function () {
 
-    let ioc = spur.create("platform")
+    let ioc = spur.create("wardrobe")
 
     registerConfig(ioc, __dirname + "/config")
 
@@ -18,8 +18,10 @@ module.exports = function () {
 
     // Set some global dependencies
     ioc.registerDependencies({
+        "firebase" : require("firebase"),
         "koa" : require("koa"),
         "KoaRouter" : require("koa-router"),
+        "bodyParser" : require('koa-bodyparser'),
         "mongoose": mongoose,
         "Schema": mongoose.Schema
     })

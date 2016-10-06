@@ -1,10 +1,12 @@
 "use strict"
 
-module.exports = function (koa, EndpointManager, Logger, config) {
+module.exports = function (koa, EndpointManager, bodyParser, Logger, config) {
     return new class WebServer {
         constructor() {
             this.app = koa()
+            this.app.use(bodyParser())
             EndpointManager.register(this.app)
+
         }
 
         start() {

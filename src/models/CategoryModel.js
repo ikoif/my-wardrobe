@@ -1,5 +1,5 @@
 "use strict";
 
 module.exports = function(FirebaseDbModel) {
-    return new FirebaseDbModel("users")
+    return new FirebaseDbModel("categories")
 }

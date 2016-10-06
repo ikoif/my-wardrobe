@@ -24,10 +24,12 @@
   "homepage": "https://ikoif.com/",
   "dependencies": {
     "cross-env": "^3.0.0",
+    "firebase": "^3.4.1",
     "http-shutdown": "^1.1.0",
     "jasmine": "^2.5.2",
     "jasmine-co": "^1.1.0",
     "koa": "^1.2.4",
+    "koa-bodyparser": "^2.2.0",
     "koa-router": "^5.4.0",
     "lodash": "^4.16.2",
     "mongoose": "^4.6.1",
